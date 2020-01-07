@@ -157,7 +157,7 @@ func isnil(err error) bool {
 	return err == nil
 }
 
-func encode(user User) ([]byte, error) {
+func Encode(user User) ([]byte, error) {
 	var buffer bytes.Buffer
 	enc := gob.NewEncoder(&buffer)
 
@@ -170,7 +170,7 @@ func encode(user User) ([]byte, error) {
 	return buffer.Bytes(), nil
 }
 
-func decode(byts []byte) (User, error) {
+func Decode(byts []byte) (User, error) {
 	var buffer bytes.Buffer
 	_, err1 := buffer.Write(byts)
 
