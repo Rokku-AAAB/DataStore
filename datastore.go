@@ -45,7 +45,7 @@ func (ds DataStore) Put(user User) error {
 	uuid := bytes.NewBufferString(user.UUID).Bytes()
 
 	if has, err := ds.db.Has(uuid); !has && err != nil {
-		buffer, err1 := encode(user)
+		buffer, err1 := Encode(user)
 
 		if err1 != nil {
 			return err1
@@ -71,7 +71,7 @@ func (ds DataStore) Get(uuid string) (User, error) {
 			return User{}, err1
 		}
 
-		user, err2 := decode(buffer)
+		user, err2 := Decode(buffer)
 
 		if err2 != nil {
 			return User{}, err2
@@ -95,7 +95,7 @@ func (ds DataStore) All() (Users, error) {
 	var err1 error
 
 	for _, buf := range buffer {
-		user, err1 = decode(buf)
+		user, err1 = Decode(buf)
 
 		if err1 != nil {
 			return Users{}, err1
