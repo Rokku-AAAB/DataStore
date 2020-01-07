@@ -83,6 +83,12 @@ func (ds DataStore) Get(uuid string) (User, error) {
 	return User{}, errors.New("cannot find key")
 }
 
+func (ds DataStore) Delete(uuid string) error {
+	uuidBytes := bytes.NewBufferString(uuid).Bytes()
+
+	return ds.db.Delete(uuidBytes)
+}
+
 func (ds DataStore) All() (Users, error) {
 	buffer, err := ds.db.All()
 

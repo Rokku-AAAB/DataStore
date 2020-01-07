@@ -115,6 +115,8 @@ github.com/xordataexchange/crypt v0.0.3-0.20170626215501-b2862e3d0a77/go.mod h1:
 gitlab.atvg-studios.com/atvg-studios/go-database v1.0.0 h1:5yyP4LaHvtaYQk+AYeeZaR/2KZ7Fi0dP46620vbj6aI=
 gitlab.atvg-studios.com/atvg-studios/go-database/v2 v2.0.1 h1:oL7ovkqQFFYha3Qmb4EpJUu07s+neWamvW9Z4AHvMEQ=
 gitlab.atvg-studios.com/atvg-studios/go-database/v2 v2.0.1/go.mod h1:IhtY5WO47aUDvkIjsIfZt7vooXcKW1JgQxikKN8CA+Q=
+gitlab.atvg-studios.com/atvg-studios/go-database/v2 v2.1.0 h1:u3QLftgmQ4OjCBiHLaApm9wOyUdttvQevmhmgHhU2zc=
+gitlab.atvg-studios.com/atvg-studios/go-database/v2 v2.1.0/go.mod h1:IhtY5WO47aUDvkIjsIfZt7vooXcKW1JgQxikKN8CA+Q=
 go.etcd.io/bbolt v1.3.2/go.mod h1:IbVyRI1SCnLcuJnV2u8VeU0CEYM7e686BmAb1XKL+uU=
 go.uber.org/atomic v1.4.0/go.mod h1:gD2HeocX3+yG+ygLZcrzQJaqmWj9AIm7n08wl/qW/PE=
 go.uber.org/multierr v1.1.0/go.mod h1:wR5kodmAFQ0UK8QlbwjlSNy0Z68gJhDJUG5sjR94q/0=
